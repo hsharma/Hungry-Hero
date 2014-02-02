@@ -675,8 +675,15 @@ package com.hsharma.hungryHero.screens
 		{
 			touch = event.getTouch(stage);
 			
-			touchX = touch.globalX;
-			touchY = touch.globalY;
+			// touch variable will be null when cursor go outside of screen
+			if(touch != null)  {
+			
+			   touchX = touch.globalX;
+			   touchY = touch.globalY;
+			   
+			}
+			
+			
 		}
 		
 		/**
